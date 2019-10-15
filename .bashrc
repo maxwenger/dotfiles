@@ -110,6 +110,3 @@ fi
 
 # Alias config to manage dotfiles
 alias config='/usr/bin/git --git-dir=/home/mdwenger/.cfg/ --work-tree=/home/mdwenger'
-
-# Start tmux when term opens
-[[ $TERM != "screen" ]] && exec tmux
