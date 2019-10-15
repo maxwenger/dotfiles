@@ -1,0 +1,47 @@
+!! Colors
+
+*foreground: 	#E8DFD6
+*background: 	#021B21
+*cursorColor:  #2E3340
+*color0:       #032C36
+*color8:       #065F73
+*color1:       #C2454E
+*color9:       #EF5847
+*color2:       #7CBF9E
+*color10:      #A2D9B1
+*color3:       #8A7A63
+*color11:      #BEB090
+*color4:       #2E3340
+*color12:      #61778D
+*color5:       #FF5879
+*color13:      #FF99A1
+*color6:       #44B5B1
+*color14:      #9ED9D8
+*color7:       #F2F1B9
+*color15:      #F6F6C9
+
+!! URxvt Appearance
+URxvt.background:	[90]#021B21
+
+URxvt.font:	xft:Noto\ Mono:pixlesize=12 
+
+!! Specifies the terminal type name to be set in the TERM environment variable.
+URxvt.termName:	screen-256color
+
+!! Start as a login shell by prepending a - to argv[0] of the shell. Good for tmux.
+URxvt.loginShell:	true
+
+URxvt.cursorColor: magenta
+
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
