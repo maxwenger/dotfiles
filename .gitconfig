@@ -1,3 +1,5 @@
 [user]
 	name = Maxwell Wenger
 	email = 3391859+maxwenger@users.noreply.github.com
+[credential]
+	helper = store
