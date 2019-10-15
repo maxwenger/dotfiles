@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -58,10 +54,9 @@ fi
 
 RCol='\033[0m'
 Gre='\033[32m';
-Red='\033[31m';
 Blu='\033[34m';
 Yel='\033[33m';
-PS1="${RCol}┌─[\[${Blu}\]\u@\h\[${RCol}\] \[${Yel}\]\w\[${RCol}\]] ${Gre}\@${Blu}\n└─╼ "
+PS1="${RCol}┌─[\[${Blu}\]\u@\h\[${RCol}\] \[${Yel}\]\w\[${RCol}\]] ${Gre}\@${RCol}\n└─╼ "
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -77,10 +72,10 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
+    alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
+    alias grep='grep --color=auto'
     #alias fgrep='fgrep --color=auto'
     #alias egrep='egrep --color=auto'
 fi
@@ -114,6 +109,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ADD CLION TO PATH
-export PATH=$PATH:/opt/clion-2019.2.4/bin
+# Alias config to manage dotfiles
 alias config='/usr/bin/git --git-dir=/home/mdwenger/.cfg/ --work-tree=/home/mdwenger'
+
+# Start tmux when term opens
+[[ $TERM != "screen" ]] && exec tmux
