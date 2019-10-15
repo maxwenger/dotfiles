@@ -53,10 +53,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 RCol='\033[0m'
-Gre='\033[32m';
 Blu='\033[34m';
 Yel='\033[33m';
-PS1="${RCol}┌─[\[${Blu}\]\u@\h\[${RCol}\] \[${Yel}\]\w\[${RCol}\]] ${Gre}\@${RCol}\n└─╼ "
+PS1="${RCol}┌─[\[${Blu}\]\u@\h\[${RCol}\] \[${Yel}\]\w\[${RCol}\]]\n└─╼ "
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
