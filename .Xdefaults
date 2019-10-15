@@ -1,27 +1,28 @@
 !! Colors
+*color0:	#2E3440
+*color1:	#3B4252
+*color2:	#434C5E
+*color3:	#4C566A
+*color4:	#D8DEE9
+*color5:	#E5E9F0
+*color6:	#ECEFF4
+*color7:	#8FBCBB
+*color8:	#88C0D0
+*color9:	#81A1C1
+*color10:	#5E81AC
+*color11:	#BF616A
+*color12:	#D08770
+*color13:	#EBCB8B
+*color14:	#A3BE8C
+*color15:	#B48EAD
 
 *foreground: 	#E8DFD6
-*background: 	#021B21
+*background: 	#2D3440
 *cursorColor:  #2E3340
-*color0:       #032C36
-*color8:       #065F73
-*color1:       #C2454E
-*color9:       #EF5847
-*color2:       #7CBF9E
-*color10:      #A2D9B1
-*color3:       #8A7A63
-*color11:      #BEB090
-*color4:       #2E3340
-*color12:      #61778D
-*color5:       #FF5879
-*color13:      #FF99A1
-*color6:       #44B5B1
-*color14:      #9ED9D8
-*color7:       #F2F1B9
-*color15:      #F6F6C9
 
 !! URxvt Appearance
-URxvt.background:	[90]#021B21
+URxvt.depth:	32 
+URxvt.background:	[90]#2D3440
 
 URxvt.font:	xft:Noto\ Mono:pixlesize=12 
 
@@ -43,5 +44,4 @@ URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
-URxvt.depth: 24
 URxvt.iso14755: false

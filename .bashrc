@@ -56,11 +56,12 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
+RCol='\033[0m'
+Gre='\033[32m';
+Red='\033[31m';
+Blu='\033[34m';
+Yel='\033[33m';
+PS1="${RCol}┌─[\[${Blu}\]\u@\h\[${RCol}\] \[${Yel}\]\w\[${RCol}\]] ${Gre}\@${Blu}\n└─╼ "
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -88,8 +89,9 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
+alias ll='ls -l'
+alias la='ls -A'
+alias lla='ls -la'
 #alias l='ls -CF'
 
 # Alias definitions.
