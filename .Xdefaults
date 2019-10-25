@@ -26,7 +26,7 @@
 URxvt.depth:	32 
 URxvt.background:	[90]#2D3440
 
-URxvt.font:	xft:Hack:pixlesize=12 
+URxvt.font:	xft:Hack:pixlesize=16 
 
 !! Specifies the terminal type name to be set in the TERM environment variable.
 URxvt.termName:	screen-256color
