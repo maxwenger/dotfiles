@@ -110,3 +110,8 @@ fi
 
 # Alias config to manage dotfiles
 alias config='/usr/bin/git --git-dir=/home/mdwenger/.cfg/ --work-tree=/home/mdwenger'
+# create .tar.gz 
+targz() { tar -zcvf .tar.gz ; rm -r ; }
+# extra .tar.gz
+untargz() { tar -zxvf ; rm -r ; }
+
