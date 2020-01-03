@@ -115,3 +115,5 @@ targz() { tar -zcvf .tar.gz ; rm -r ; }
 # extra .tar.gz
 untargz() { tar -zxvf ; rm -r ; }
 
+# Add home dir local bin to PATH
+export PATH="$HOME/.local/bin:$PATH"

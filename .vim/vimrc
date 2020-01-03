@@ -19,11 +19,7 @@ vmap <Leader>P "+P
 syntax on " Syntax highlighting
 set showmatch " Shows matching brackets
 set ruler " Always shows location in file (line#)
-set smarttab " Autotabs for certain code
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-set noexpandtab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=3 smarttab
 
 " Highlight chars
 set colorcolumn=110
@@ -33,6 +29,9 @@ syntax on
 colorscheme nord
 
 set number
+
+" Templates
+map :ccpr :0r ~/.vim/templates/copyright.c
 
 """""" Vundle stuff """"""""""""""
 set nocompatible              " be iMproved, required
@@ -50,6 +49,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'dense-analysis/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
