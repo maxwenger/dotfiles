@@ -4,6 +4,9 @@ inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
 
+" Fix delete key issue
+set backspace=indent,eol,start
+
 " Remap jj to <esc>
 inoremap jj <esc>
 inoremap <esc> <nop>
@@ -21,8 +24,15 @@ set showmatch " Shows matching brackets
 set ruler " Always shows location in file (line#)
 set tabstop=8 softtabstop=0 expandtab shiftwidth=3 smarttab
 
+" Turn spell check on for some files
+augroup markdownSpell
+   autocmd!
+   autocmd FileType latex,tex,md,markdown setlocal spell
+   autocmd BufRead,BufNewFile *.md setlocal spell
+augroup END
+
 " Highlight chars
-set colorcolumn=110
+set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
 
 syntax on
@@ -50,6 +60,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'dense-analysis/ale'
+Plugin 'lervag/vimtex'
+Plugin 'xuhdev/vim-latex-live-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
