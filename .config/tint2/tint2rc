@@ -85,7 +85,7 @@ border_color_pressed = #d8d8d8 30
 
 #-------------------------------------
 # Panel
-panel_items = TS:BE
+panel_items = TS:BEE
 panel_size = 100% 30
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -227,6 +227,21 @@ separator_color = #ffffff 20
 separator_style = line
 separator_size = 2
 separator_padding = 0 6
+
+#-------------------------------------
+## Executor weather
+execp = new
+execp_command = wget https://wttr.in/?format=4 2>/dev/null -O - | cut -d : -f 2
+execp_lclick_command = firefox https://wttr.in/
+execp_interval = 1200
+execp_continuous = 0
+execp_font = Noto Sans 8
+execp_font_color = #ffffff 100
+execp_padding = 4 0
+execp_background_id = 5
+execp_centered = 0
+execp_icon_w = 0
+execp_icon_h = 0
 
 #-------------------------------------
 # Executor 1
