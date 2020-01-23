@@ -246,7 +246,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 1
 execp = new
-execp_command = executors/clock
+execp_command = date +"%a %d // %I.%M"
 execp_interval = 30
 execp_has_icon = 0
 execp_cache_icon = 1
