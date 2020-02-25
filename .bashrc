@@ -117,3 +117,8 @@ untargz() { tar -zxvf ; rm -r ; }
 
 # Add home dir local bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
+
+# Replace vim with nvim
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
