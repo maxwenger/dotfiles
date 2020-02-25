@@ -4,6 +4,9 @@ inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
 
+nnoremap j jzz
+nnoremap k kzz
+
 " Fix delete key issue
 set backspace=indent,eol,start
 
