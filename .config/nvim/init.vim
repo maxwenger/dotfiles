@@ -1,18 +1,26 @@
-" Remap arrows to learn hjkl
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
+" vim-plug stuff
+call plug#begin()
+Plug 'arcticicestudio/nord-vim'
+Plug 'dense-analysis/ale'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
 
+" Remap arrows to learn hjkl
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+
+" keep cursor in the center of the buffer
 nnoremap j jzz
 nnoremap k kzz
-
-" turn on rel. line numbrs
-set number relativenumber
 
 " Remap jj to <esc>
 inoremap jj <esc>
 inoremap <esc> <nop>
+
+" turn on rel. line numbrs
+set number relativenumber
 
 syntax on " Syntax highlighting
 set showmatch " Shows matching brackets
@@ -26,10 +34,8 @@ augroup markdownSpell
    autocmd BufRead,BufNewFile *.md setlocal spell
 augroup END
 
-" Highlight chars
+" Line thing to know if my lines are too long
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
 
-syntax on
-
-set number
+colorscheme nord " use nord colorscheme
