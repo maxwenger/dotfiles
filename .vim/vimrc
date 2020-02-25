@@ -7,6 +7,9 @@ inoremap <Right> <nop>
 nnoremap j jzz
 nnoremap k kzz
 
+" turn on rel. line numbrs
+set number relativenumber
+
 " Fix delete key issue
 set backspace=indent,eol,start
 
