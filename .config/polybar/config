@@ -21,17 +21,17 @@ format-background = ${colors.shade2}
 
 [module/wired]
 type = internal/network
-interface = enp0s25
+interface = enp7s0
 label-connected = "  "
 format-connected = <label-connected>
 format-connected-background = ${colors.shade2}
 
-[module/wireless]
-type = internal/network
-interface = wlp3s0
-label-connected = "  "
-format-connected = <label-connected>
-format-connected-background = ${colors.shade2}
+; [module/wireless]
+; type = internal/network
+; interface = wlp3s0
+; label-connected = "  "
+; format-connected = <label-connected>
+; format-connected-background = ${colors.shade2}
 
 [module/date]
 type = internal/date
@@ -44,8 +44,8 @@ format-padding = 1
 [module/time]
 type = internal/date
 interval = 1.0
-time = " %H:%M "
-time-alt = " %A, %B %dth "
+time = " %I:%M "
+time-alt = " %a // %d "
 label = %time%
 format-background = ${colors.background2}
 format-foreground = ${colors.foreground}
@@ -57,7 +57,7 @@ pin-workspaces = true
 label-focused = %index%
 label-focused-padding = 1
 label-focused-foreground = ${colors.selection}
-label-focused-background = ${colors.selection}
+label-focused-background = ${colors.background2}
 
 label-unfocused = %index%
 label-unfocused-background = ${colors.background2}

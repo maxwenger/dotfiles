@@ -2,7 +2,6 @@
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 Plug 'dense-analysis/ale'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 
 " Remap arrows to learn hjkl
@@ -39,3 +38,5 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
 
 colorscheme nord " use nord colorscheme
+
+let g:colorizer_auto_filetype=''
