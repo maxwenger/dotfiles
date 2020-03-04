@@ -12,6 +12,9 @@
 # Set wallpaper
 exec --no-startup-id feh --randomize --bg-fill ~/.wallpapers/*
 
+# Startup redshift
+exec --no-startup-id redshift
+
 set_from_resource $base03   i3wm.color8     #002b36
 set_from_resource $base02   i3wm.color0     #073642
 set_from_resource $base01   i3wm.color10    #586e75
