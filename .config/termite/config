@@ -5,6 +5,9 @@
 # Repository: https://github.com/arcticicestudio/nord-termite
 # License:    MIT
 
+[options]
+font = Monospace 13
+
 [colors]
 cursor = #d8dee9
 cursor_foreground = #2e3440
