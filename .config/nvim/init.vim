@@ -2,6 +2,7 @@
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Remap arrows to learn hjkl
